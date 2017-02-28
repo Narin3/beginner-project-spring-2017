@@ -1,10 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-const Application = () => {
+const Application = ({name}) => {
   return (
-    <div> Hello world </div>
+    <div> Hello {name} </div>
   );
 };
 
-render(<Application/>, document.getElementById('container'));
+render(<Application name={'new iterate hacker'}/>,
+       document.getElementById('container'));
