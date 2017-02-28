@@ -1,11 +1,16 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-const Application = ({name}) => {
+const Application = ({name, handler}) => {
   return (
-    <div> Hello {name} </div>
+    <div onClick={handler}> Hello {name} </div>
   );
 };
 
-render(<Application name={'new iterate hacker'}/>,
-       document.getElementById('container'));
+render((
+  <Application
+    name={'new iterate hacker'}
+    handler={function(e) {
+      console.log('Hello', e.target);
+    }}
+    />), document.getElementById('container'));
