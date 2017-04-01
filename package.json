@@ -1,0 +1,42 @@
+{
+  "name": "beginner-project-spring-2017",
+  "version": "1.0.0",
+  "engineStrict": true,
+  "engines": {
+    "node": "^7.6.0",
+    "npm": "^4.1.2"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node scripts/watch-project.js",
+    "webpack-watch": "NODE_ENV='debug' webpack --progress -d --colors --watch",
+    "server-watch": "NODE_ENV='debug' nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iteratehackerspace/beginner-project-spring-2017.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iteratehackerspace/beginner-project-spring-2017/issues"
+  },
+  "homepage": "https://github.com/iteratehackerspace/beginner-project-spring-2017#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-3": "^6.22.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.2.1",
+    "webpack-cli": "^1.0.0"
+  }
+}
